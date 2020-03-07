@@ -1,0 +1,15 @@
+package Pages;
+
+import org.openqa.selenium.WebDriver;
+
+public class LoginPage extends MainPage {
+
+	public LoginPage() {
+		super(driver);
+		// TODO Auto-generated constructor stub
+	}
+
+	
+	
+	
+}

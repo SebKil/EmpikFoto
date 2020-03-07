@@ -1,0 +1,10 @@
+package Driver;
+
+import org.openqa.selenium.WebDriver;
+
+public class LocalDriver {
+	
+	protected static WebDriver driver;
+	
+	
+}

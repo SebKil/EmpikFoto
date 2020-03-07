@@ -1,0 +1,14 @@
+package Pages;
+
+
+public class LoginPage extends MainPage {
+
+	public LoginPage() {
+		super(driver);
+		// TODO Auto-generated constructor stub
+	}
+
+	
+	
+	
+}

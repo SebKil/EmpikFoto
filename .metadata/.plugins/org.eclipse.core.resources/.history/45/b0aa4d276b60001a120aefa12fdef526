@@ -1,0 +1,46 @@
+package TestCases;
+
+import org.testng.annotations.Test;
+
+import Pages.LoginPage;
+import Pages.MainPage;
+
+import org.testng.annotations.BeforeTest;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Sleeper;
+import org.testng.annotations.AfterTest;
+
+public class LoginTest extends LoginPage {
+	
+	MainPage mainPage;
+	LoginPage loginPage;
+	
+	@BeforeTest
+	public void setup() {
+		//--------Sciezka do chromedrivera!-------------
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\Desktop\\JAVA\\EmpikTask\\chromedriver.exe");  
+		driver = new ChromeDriver();  
+		driver.navigate().to("https://www.empikfoto.pl/");  
+		driver.manage().window().maximize();
+		
+		mainPage = new MainPage();
+		loginPage = new LoginPage();
+	}
+
+	@AfterTest
+	public void afterTest() {
+		driver.quit();
+	}
+	
+	
+	
+	@Test
+	public void correctLogin() throws InterruptedException {
+		mainPage.selectLoginButton();
+		Thread.sleep(10000);
+	}
+  
+	
+
+}

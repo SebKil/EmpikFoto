@@ -1,0 +1,30 @@
+package Pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import Driver.LocalDriver;
+
+public class MainPage LocalDriver{
+	
+	
+	WebDriverWait wait;
+	
+	@FindBy(linkText = "Zaloguj")
+	private WebElement loginBtn;
+
+	public MainPage() {
+		super();
+		wait = new WebDriverWait(driver, 5);
+		PageFactory.initElements(driver, this);
+	}
+	
+	public void selectLoginButton() {
+		wait.until(ExpectedConditions.invisibilityOf(loginBtn));
+		loginBtn.click();
+	}
+}

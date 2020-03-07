@@ -1,0 +1,20 @@
+package Driver;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class LocalDriver {
+	
+	protected static WebDriver driver = null;
+	String chromeDriverPath = "C:\\Users\\User\\Desktop\\JAVA\\EmpikTask\\chromedriver.exe";
+	
+	public LocalDriver() {
+		System.setProperty("webdriver.chrome.driver", chromeDriverPath);
+		driver = new ChromeDriver();
+	}
+	
+	public static WebDriver getDriver() {
+		return driver;
+	}
+	
+}

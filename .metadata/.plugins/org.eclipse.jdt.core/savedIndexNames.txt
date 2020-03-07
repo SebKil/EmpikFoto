@@ -1,0 +1,12 @@
+INDEX VERSION 1.131+C:\Users\User\Desktop\JAVA\EmpikTask\.metadata\.plugins\org.eclipse.jdt.core
+1663699456.index
+2227828089.index
+3851058766.index
+1671692264.index
+3535663995.index
+3890845694.index
+1630576240.index
+1718023238.index
+1024452057.index
+427273523.index
+177109634.index

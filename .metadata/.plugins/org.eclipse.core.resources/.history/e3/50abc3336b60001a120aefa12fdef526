@@ -1,0 +1,15 @@
+package Pages;
+
+
+
+public class LoginPage extends MainPage {
+
+	public LoginPage() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	
+	
+	
+}
